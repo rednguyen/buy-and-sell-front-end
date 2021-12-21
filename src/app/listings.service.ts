@@ -12,6 +12,8 @@ export class ListingsService {
   ) { }
 
   getListings(): Observable<Listing[]> {
-    return this.http.get<Listing[]>('/api/listings');
+    return this.http.get<Listing[]>('https://e0mwm1xh2f.execute-api.us-east-2.amazonaws.com/default/buy-and-sell-dev-BuyAndSell');
+    // return this.http.get<Listing[]>('/api/listings');
+    
   }
 }
